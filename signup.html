@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <nav style="justify-content: space-around;">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact Me</a>
+            <a href="#">Blog</a>
+            <a href="#">Services</a>
+        </nav>
+    </header>
+
+    <!-- Sign-Up Form Section -->
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" id="signup-username" placeholder="Username" required><br>
+            <input type="password" id="signup-password" placeholder="Password" required><br>
+            <button type="button" onclick="signUp()">Sign Up</button>
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </form>
+    </div>
+
+    <!-- Message Display -->
+    <p id="message"></p>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

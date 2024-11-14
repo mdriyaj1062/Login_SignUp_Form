@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <header>
+        <h1>EMPLOYEES DETAILS</h1>
+        <!-- <nav style="justify-content: space-around;">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact Me</a>
+            <a href="#">Blog</a>
+            <a href="#">Services</a>
+        </nav> -->
+    </header>
+    <!-- <h1>EMPLOYEES DETAILS</h1> -->
+   <div id="text" class="table-section"></div> 
+   <footer>
+    <p>&copy; 2024 My Website. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // ctreate an Array:-
+
+var user = [
+    'John Doe', 'Jane Smith', 'Samuel Brown', 'Emily Davis', 'Michael Wilson', 'Sarah Johnson', 'David Lee', 'Laura Clark', 
+    'Andrew Harris', 'Sophia Lewis', 'James Walker', 'Isabella Young', 'William King', 'Benjamin Scott', 'Madison Green', 
+    'Lucas Adams', 'Ava Baker', 'Oliver Martinez', 'Mia Gonzalez', 'Ethan Carter', 'Charlotte Perez', 'Alexander Sanchez', 
+    'Amelia Rivera', 'Henry Murphy', 'Lily Morris', 'Jack Mitchell', 'Elijah Walker', 'Chloe Lee', 'Daniel Harris', 'Nora Collins', 
+    'Matthew Wood', 'Zoe James', 'Jackson Lee', 'Scarlett Scott', 'Henry Young', 'Ella King', 'Mason Evans', 'Grace Green', 
+    'Owen Thompson', 'Natalie Carter', 'Isaac Johnson', 'Cora Wright', 'Johnathan Nelson', 'Sophie Adams', 'Leo Clark', 
+    'Evelyn Lee', 'Isaiah Walker', 'Alice Baker', 'Lucas Turner', 'Grace Mitchell', 'Henry Moore', 'Jackie Stewart', 'Leah Thompson',
+    'David White', 'Ruby Clark', 'Carter Lewis', 'Lily Wright', 'Evan Harris', 'Emma Young', 'William Evans', 'Megan Johnson', 
+    'Riley Walker', 'Mason Wright', 'Avery Turner', 'Joseph Lee', 'Victoria White', 'Ethan Taylor', 'Addison Lee', 'Liam Brown', 
+    'Sophia Harris', 'Landon Adams', 'Lucas Hall', 'Leah Evans', 'Elijah Clark', 'Zoe Turner', 'Oliver Wright', 'Grace Wilson', 
+    'Henry Young', 'Chloe Brown', 'Natalie White', 'Sophia Garcia', 'Eli Walker', 'Mason Taylor', 'Emily Adams', 'Grace Harris', 
+    'Lucas Williams', 'Hannah White', 'Elijah Martinez', 'Carter Moore', 'Charlotte Scott', 'Amelia Wilson', 'Evan Clark', 
+    'James Davis', 'Benjamin Lewis', 'Sarah Turner', 'Ethan Moore', 'Lily Baker', 'Andrew White', 'Riley Turner', 'Oliver Harris'
+];
+
+
+var age = [
+28, 34, 45, 22, 38, 29, 50, 40, 33, 27, 31, 24, 26, 37, 32, 41, 25, 30, 36, 43, 28, 39, 33, 24, 35, 42, 27, 31, 44, 38,
+    29, 32, 40, 37, 25, 33, 24, 28, 39, 31, 26, 45, 35, 32, 27, 34, 30, 38, 29, 31, 36, 33, 42, 28, 32, 33, 37, 33, 34, 29,
+    39, 31, 35, 32, 32, 28, 37, 31, 33, 40, 36, 27, 41, 32, 32, 36, 35, 40, 31, 36, 41, 29, 38, 34, 33, 36, 25, 38, 32, 30,39, 31, 35, 32, 32, 28, 37, 31, 33, 40
+];
+console.log("index :",age[90]);
+
+var email = [
+    'john.doe@example.com', 'jane.smith@example.com', 'samuel.brown@example.com', 'emily.davis@example.com', 'michael.wilson@example.com', 
+    'sarah.johnson@example.com', 'david.lee@example.com', 'laura.clark@example.com', 'andrew.harris@example.com', 'sophia.lewis@example.com',
+    'james.walker@example.com', 'isabella.young@example.com', 'william.king@example.com', 'benjamin.scott@example.com', 'madison.green@example.com', 
+    'lucas.adams@example.com', 'ava.baker@example.com', 'oliver.martinez@example.com', 'mia.gonzalez@example.com', 'ethan.carter@example.com', 
+    'charlotte.perez@example.com', 'alexander.sanchez@example.com', 'amelia.rivera@example.com', 'henry.murphy@example.com', 'lily.morris@example.com', 
+    'jack.mitchell@example.com', 'elijah.walker@example.com', 'chloe.lee@example.com', 'daniel.harris@example.com', 'nora.collins@example.com', 
+    'matthew.wood@example.com', 'zoe.james@example.com', 'jackson.lee@example.com', 'scarlett.scott@example.com', 'henry.young@example.com', 
+    'ella.king@example.com', 'mason.evans@example.com', 'grace.green@example.com', 'owen.thompson@example.com', 'natalie.carter@example.com', 
+    'isaac.johnson@example.com', 'cora.wright@example.com', 'johnathan.nelson@example.com', 'sophie.adams@example.com', 'leo.clark@example.com', 
+    'evelyn.lee@example.com', 'isaiah.walker@example.com', 'alice.baker@example.com', 'lucas.turner@example.com', 'grace.mitchell@example.com', 
+    'henry.moore@example.com', 'jackie.stewart@example.com', 'leah.thompson@example.com', 'david.white@example.com', 'ruby.clark@example.com', 
+    'carter.lewis@example.com', 'lily.wright@example.com', 'evan.harris@example.com', 'emma.young@example.com', 'william.evans@example.com', 
+    'megan.johnson@example.com', 'riley.walker@example.com', 'mason.wright@example.com', 'avery.turner@example.com', 'joseph.lee@example.com', 
+    'victoria.white@example.com', 'ethan.taylor@example.com', 'addison.lee@example.com', 'liam.brown@example.com', 'sophia.harris@example.com', 
+    'landon.adams@example.com', 'lucas.hall@example.com', 'leah.evans@example.com', 'elijah.clark@example.com', 'zoe.turner@example.com', 
+    'oliver.wright@example.com', 'grace.wilson@example.com', 'henry.young@example.com', 'chloe.brown@example.com', 'natalie.white@example.com', 
+    'sophia.garcia@example.com', 'eli.walker@example.com', 'mason.taylor@example.com', 'emily.adams@example.com', 'grace.harris@example.com', 
+    'lucas.williams@example.com', 'hannah.white@example.com', 'elijah.martinez@example.com', 'carter.moore@example.com', 'charlotte.scott@example.com', 
+    'amelia.wilson@example.com', 'evan.clark@example.com', 'james.davis@example.com', 'benjamin.lewis@example.com', 'sarah.turner@example.com', 
+    'ethan.moore@example.com', 'lily.baker@example.com', 'andrew.white@example.com', 'riley.turner@example.com', 'oliver.harris@example.com'
+];
+
+var department = [
+    'Engineering', 'Marketing', 'Human Resources', 'Engineering', 'Finance', 'Sales', 'Customer Support', 'Marketing', 
+    'Product Management', 'Design', 'Engineering', 'Operations', 'Finance', 'Human Resources', 'Sales', 
+    'Customer Support', 'Engineering', 'Product Management', 'Design', 'Marketing', 'Human Resources', 'Finance', 'Sales', 
+    'Operations', 'Engineering', 'Customer Support', 'Design', 'Product Management', 'Marketing', 'Human Resources', 'Sales', 
+    'Customer Support', 'Design', 'Product Management', 'Marketing', 'Human Resources', 'Operations', 'Customer Support', 
+    'Design', 'Product Management', 'Sales', 'Marketing', 'Finance', 'Human Resources', 'Product Management', 'Design', 
+    'Engineering', 'Sales', 'Operations', 'Human Resources', 'Customer Support', 'Marketing', 'Design', 'Engineering', 
+    'Customer Support', 'Finance', 'Human Resources', 'Marketing', 'Sales', 'Product Management', 'Design', 'Operations', 
+    'Customer Support', 'Human Resources', 'Engineering', 'Design', 'Sales', 'Operations', 'Finance', 'Human Resources', 
+    'Product Management', 'Sales', 'Marketing', 'Design', 'Customer Support', 'Product Management', 'Engineering', 'Finance', 
+    'Marketing', 'Human Resources', 'Sales', 'Product Management', 'Customer Support', 'Engineering', 'Design', 'Operations','Marketing', 'Human Resources', 'Sales', 'Product Management', 'Customer Support', 'Engineering', 'Design', 'Operations', 'Human Resources', 'Engineering', 'Design', 'Sales','Operations', 'Finance'
+];
+
+//
+var text = document.getElementById('text');
+var table ='<table align="center"><thead><tr><th>ID</th><th>Name</th><th>Age</th><th>Email</th><th>Department</th></tr></thead><tbody>';
+
+for(var i =0;i<user.length;i++){
+   table =table +  '<tr><td>'+(i+1)+'</td><td>'+user[i]+'</td><td>'+age[i]+'</td><td>'+email[i]+'</td><td>'+department[i]+'</td></tr>';
+}
+table =table + '</tbody></table>';
+// showing table in HTML:
+text.innerHTML=table;
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+  
+}
+/* Header Section */
+header {
+    background-color: #4CAF50;
+  
+    color: white;
+    text-align: center;
+    position: fixed;
+     top: 0;
+    width: 100%;
+   
+  
+    
+}
+/* table-section */
+table{
+    
+    margin-top: 90px; /* Add margin to top for space under the header */
+    margin-bottom: 60px; /* Add margin to bottom for space above the footer */
+    text-align: center;
+}
+th{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #000;
+}
+td{
+    padding:10px ;
+    border:2px solid #000 ;
+}
+
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

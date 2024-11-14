@@ -1,0 +1,103 @@
+ /* Basic reset for margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set full height for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+.button{
+    border:none;
+    height: 40px;
+    width: 80px;
+    background: linear-gradient(135deg, #6a11cb, #4fd874); /* Gradient background */
+  color: white;
+  border-radius: 50px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.button:hover{
+    background: linear-gradient(135deg, #61a67e, #935cce); /* Reverse gradient on hover */
+  transform: translateY(-4px); /* Button lift effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+.button:focus{
+    outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.5)
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+color: green;
+margin-top: 90px;
+text-shadow: 2px;
+}
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    
+}

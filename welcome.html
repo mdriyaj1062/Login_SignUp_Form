@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <!-- <h1>Welcome to page</h1> -->
+    <header>
+        <h1>My Website</h1>
+        <nav style="justify-content: space-around;">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact Me</a>
+            <a href="#">Blog</a>
+            <a href="#">Services</a>
+            <button class="button" id="btn">Menu</button>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 style="font-size: 100px;">Welcome To My Page</h1>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
+</body>
+<script>
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click",()=>{
+        console.log("button was clicked !");
+        window.location.href = "table.html";
+    })
+</script>
+</html>
